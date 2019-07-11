@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>login</title>
+	<link rel="stylesheet" type="text/css" href="assets/login.css">
+</head>
+<body>
+	<section class="satu">
+		<div class="conten">
+			<h1>WELCOME</h1>
+			<h1>E-SPORT</h1>
+			<div class="isi">
+				<p>aaaaaaaaaaaaaaaaaaaa</p>
+				<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+				<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+				
+			</div>
+		</div>
+		<div class="account">
+			<div class="cara1">
+				<img src="assets/img/google.jpg">
+			</div>
+			<div class="cara2">
+				<img src="assets/img/facebook.png">
+			</div>
+		</div>
+		<div class="tambahan"></div>
+	</section>
+	<section class="dua">
+		<div class="login">
+			<img src="assets/img/icon.png" class="user">
+			<h3>Log In Here</h3>
+			<form action="home.html" onsubmit="return validasiform()">
+				<p>Email</p>
+				<input type="text" id="mail" name="Email" placeholder="Enter Email">
+				<p>Password</p>
+				<input type="password" id="password" name="password" placeholder="*******" >
+				<button type="" name="submit">Sig In</button>
+				<a href="#" class="help">Forget Password </a>
+			</form>
+		</div>
+	</section>
+	<script type="text/javascript">
+		function validasiform(){
+			var mail=document.getElementById('mail').value;
+			var password=document.getElementById('password').value;
+			
+			
+			if (mail =="" && password =="") {
+				alert("please enter your Email and password")
+				return false;
+			}
+			else if (mail == "") {
+				alert("please enter your Email")
+				return false;
+			}
+			else if (password == "") {
+				alert("please enter your password")
+				return false;
+			}
+			else if (mail== "setiawan@gmail.com" && password== "setiawan" )  {
+				alert("WELCOME"+ "" + mail)
+				return true;
+			}
+			else {
+				alert("Email and password you entered do not macth")
+				return false;
+			}
+			}
+			
+		
+		/*function check(form){
+			if(Email.value =="Setiawan@gmail.com" && password.value == "setiawan") {
+				window.open('home.html')		
+			}
+			else{
+				alert("the Email and password you entered don't match")
+			}
+		}*/
+		/*class Users{
+    constructor(username,password){
+      this.Email = Email;
+      this.password = password;
+    }
+    control_variable(control_Email,control_password){
+      this.control_Email = control_Email;
+      this.control_password = control_password;
+    }
+    control(){
+      if(this.control_username == this.username && this.control_password == this.password){
+        $(".message").text(`WELCOME ${$('#username').val()}`)
+      }else{
+        $(".message").text('You have entered incorrectly.')
+      }
+    }
+  };
+
+  let User_variables = {
+    // username : password
+    "furkan" : 'gulsen',
+    "maria"  : "allen",
+    "bob"    : "quenn",
+    'rick'   : 'rick123'
+  }
+
+  var modal = document.getElementById('myModal');
+  var btn = document.getElementById("myBtn");
+  var span = document.getElementsByClassName("close")[0];
+
+  $("#login").click(function(){
+    let user = new Users($('#username').val(), $('#password').val());
+    var password = User_variables[$('#username').val()]
+    user.control_variable($('#username').val(),password);
+    user.control();
+    modal.style.display = "block";
+  });
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  };
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+        */
+	</script>
+	<footer>Copyright &copy; 2018 I Wayan Setiawan</footer>
+
+</body>
+</html>
