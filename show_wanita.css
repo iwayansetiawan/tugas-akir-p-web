@@ -1,0 +1,147 @@
+ul{
+    position: absolute;
+    top: 4%;
+    right: -16%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #262626;
+    transition: .5s;
+}
+ul li a:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 2px;
+    background: #262626;
+    transform: scaleX(0);
+    z-index: -1;
+    transform-origin: right;
+    transition: transform .5s;
+}
+ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left
+}
+ul li a:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+    width: 100%;
+    height: 2px;
+    background: #262626;
+    transform: scaleX(0);
+    z-index: -1;
+    transform-origin: left;
+    transition: transform .5s;
+}
+ul li a:hover:after{
+    transform: scaleX(1);
+    transform-origin: right
+}
+.batas{
+    background-color: black;
+    width: 100%;
+    height: 4px;
+    margin-top: 4.1%;
+    border-radius: 2px;
+}
+.kiri{
+    background:url(img/slide_woman3.jpg);
+    background-size: cover;
+    height: 430px;
+    width: 60%;
+    float: left;
+    margin-top: 1%;
+    margin-left: 1.7%;
+     box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+}
+.kanan{
+    background:url(img/wanita3.jpg);
+    background-size: cover;
+    height: 430px;
+    width: 36.6%;
+    float: right;
+    margin-top: 1%;
+    margin-right: 1.7%;
+     box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+}
+.bawah{
+    overflow: hidden;
+    height: 180px;
+    width: 80%;
+    float: left;
+    margin-left: 1.7%;
+    margin-top: -5%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+.isibawah{
+    height: 180px;
+    width: 160px;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+}
+.satu{
+    background: url(img/show_wanita.jpg);
+    background-size: cover;
+}
+.dua{
+    background: url(img/wanita.jpg);
+    background-size: cover;
+}
+.tiga{
+    background: url(img/wanita2.jpg);
+    background-size: cover;
+}
+.empat{
+    background: url(img/wanita4.jpg);
+    background-size: cover;
+}
+.lima{
+    background: url(img/wanita1.jpg);
+    background-size: cover;
+}
+button{
+    border: none;
+    outline: none;
+    width: 20%;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: #6c98c6;
+    border-radius: 20px;
+    }
+.tombol{
+    padding-top: 340px;
+    text-align: center;
+    padding-left: 150px;
+}
+button:hover{
+    background: #98b7d7;
+    color: #2d3440;
+}
+footer{
+    background-color:pink;
+            clear: left;
+            width: 100%;
+            height: 30px;
+            text-align: center;
+            font-style: oblique;
+}

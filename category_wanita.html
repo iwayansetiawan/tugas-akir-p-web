@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>category wanita</title>
+	<link rel="stylesheet" type="text/css" href="assets/catagory_wanita.css">
+	
+</head>
+<body>
+	<ul>
+		<li><a href="home.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="category_wanita.html">Wanita</a></li>
+    <li><a href="category_pria.html">Pria</a></li>
+    <li><a href="saved.html">Saved</a></li>
+    <li><a href="profile.html">Profile</a></li>
+	</ul>
+	<div class="batas"></div>
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="assets/img/slide_woman1.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="assets/img/slide_woman2.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="assets/img/slide_woman3.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="assets/img/slide_woman4.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="assets/img/slide_woman5.jpg" style="width:100%">
+
+</div>
+
+</div>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+<div class="isiconten">
+	<div class="bagian" onclick="window.location.href='show_wanita.html'">
+   <img src="assets/img/wanita.jpg" class="isibagian"> 
+  </div>
+	<div class="bagian" onclick="window.location.href='show_wanita.html'">
+    <img src="assets/img/wanita1.jpg" class="isibagian">  
+  </div>
+	<div class="bagian" onclick="window.location.href='show_wanita.html'">
+    <img src="assets/img/wanita2.jpg" class="isibagian">  
+  </div>
+	<div class="bagian" onclick="window.location.href='show_wanita.html'">
+    <img src="assets/img/wanita3.jpg" class="isibagian">  
+  </div>
+	<div class="bagian" onclick="window.location.href='show_wanita.html'">
+    <img src="assets/img/wanita4.jpg" class="isibagian">  
+  </div>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+<footer>Copyright &copy; 2018 I Wayan Setiawan</footer>
+</body>
+</html>
